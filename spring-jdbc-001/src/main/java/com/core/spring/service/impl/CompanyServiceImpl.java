@@ -61,6 +61,7 @@ public class CompanyServiceImpl implements CompanyService {
 			company.setPhone("0123456789");
 
 			if (id == count + 3) {
+				System.out.println(id + " == " + (count + 3) + " count :  Rollback ......");
 				throw new Exception();
 			}
 
